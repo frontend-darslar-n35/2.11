@@ -8,7 +8,8 @@ html{
 }
 body{
     font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Effra', sans-serif;
+    font-weight: 400;
 }
 
 .visually-hidden{
@@ -23,7 +24,35 @@ body{
 }
 
 .container{
-    max-width: 1280px;
-    padding: 0 30px;
+    max-width: 1440px;
+    padding: 0 80px;
     margin: auto;
+}   
+
+@media screen and (max-width: 1045px) {
+    .container{
+        padding: 0 30px;
+    }
+}
+
+// Button styles
+
+.btn{
+    text-decoration: none;
+    padding: 12px 22px;
+    min-width: 129px;
+    border-radius: 40px;
+
+    &--login{
+        color: white;
+    }
+    &--register{
+        background-color: white;
+        color: black;
+    }
+
+    &--start{
+        color: black;
+        background-color: #A8FF35;
+    }
 }

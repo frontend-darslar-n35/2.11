@@ -6,10 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
-    Scss template
+    <h1 class="visually-hidden">Pygma</h1>
+    <div class="header container">
+        <header class="navbar">
+            <a class="navbar__logo" href="#">
+                <img class="social__item" class="navbar__logo__img" src="./image/logo.png" alt="Logo">
+            </a>
+            <div class="toggle toggle--active"></div>
+            <div class="navbar__menu">
+                <ul class="navbar__nav nav">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">How it work</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Pricing</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Solution</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Features</a>
+                    </li>
+                </ul>
+
+                <div class="navbar__buttons buttons">
+                    <a class="buttons__btn  btn btn--login" href="#">Login</a>
+                    <a class="buttons__btn btn btn--register" href="#">Register</a>
+                </div>
+            </div>
+        </header>
+        <div class="hero">
+            <h2 class="hero__title">Minimize your tabs. Find the trends!</h2>
+            <p class="hero__description">Don’t let your computer memories consumes all of those browser tabs.
+                Findtrend let you gathers all of your favorite website into one place.</p>
+            <a href="#" class="hero__start btn btn--start">Get Started 🔥</a>
+
+            <div class="hero__second social">
+                <img class="social__item social__twitter" src="./image/hero-twitter.png" alt="">
+                <img class="social__item social__pinterest" src="./image/hero-pinterest.png" alt="">
+                <img class="social__item social__facebook" src="./image/hero-facebook.png" alt="">
+                <img class="social__item social__reddit" src="./image/hero-reddit.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
 </body>
+<script>
+    var toggle = document.querySelector('.toggle')
+    toggle.addEventListener('click', () => {
+        toggle.classList.toggle('toggle--active')
+    })
+</script>
 
 </html>
